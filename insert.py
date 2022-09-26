@@ -23,13 +23,13 @@ def get_item_input():
 
 
 def read_json_file(filename):
-    with open(filename, 'r') as f:
+    with open(filename, "r") as f:
         items = json.load(f)
     return items
 
 
 def update_json_file(filename, items):
-    with open(filename, 'w') as f:
+    with open(filename, "w") as f:
         json.dump(items, f)
 
 
@@ -51,4 +51,5 @@ def main():
             print("Invalid choice")
 
 
-main()
+if __name__ == "__main__":
+    main()
